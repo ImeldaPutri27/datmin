@@ -231,6 +231,7 @@ def predict_cancellation(df):
         predicted = loaded_model.predict(data)
 
         # Display prediction
+        print(predicted)
         if predicted[0] == 0:
             st.write('Not Canceled')
         else:
